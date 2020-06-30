@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}memegen.link{% endblock %}</title>
+    <title>{% block title %}ZANDERMEME{% endblock %}</title>
 
     <!-- Favicon (http://realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
@@ -35,18 +35,18 @@
     {% block meta -%}
     <!-- Meta tags (general) -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@memegenlink" />
-    <meta name="twitter:title" content="memegen.link" />
-    <meta name="twitter:description" content="The open source meme generator." />
+    <meta name="twitter:site" content="@ZANDERMEME" />
+    <meta name="twitter:title" content="ZANDERMEME" />
+    <meta name="twitter:description" content="ZANDERMEME" />
     <meta name="twitter:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}" />
     <meta property="fb:app_id" content="{{ config['FACEBOOK_APP_ID'] }}" />
-    <meta property="og:title" content="memegen.link" />
+    <meta property="og:title" content="ZANDERMEME" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url_for('index-page.get', _external=True) }}" />
     <meta property="og:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}" />
     <meta property="og:image:width" content="296" />
     <meta property="og:image:height" content="296" />
-    <meta property="og:description" content="The open source meme generator." />
+    <meta property="og:description" content="ZANDERMEME" />
     {%- endblock %}
 
     <!-- Bootstrap -->
@@ -72,7 +72,7 @@
       <div class="container">
         <div class="topbar clearfix">
           <h3 class="masthead-brand">
-            <a class="masthead-brand" href="/">memegen.link</a>
+            <a class="masthead-brand" href="/">ZANDERMEME</a>
           </h3>
           <nav>
             <ul class="nav masthead-nav">
@@ -88,22 +88,5 @@
     </div>
 
     {% block content %}{% endblock %}
-
-    <div class="footer hidden-xs">
-      <nav>
-        <ul class="nav masthead-nav footer-nav pull-left">
-          <li>
-             <a href="https://jacebrowning.info" target="_blank">© 2020 Jace Browning</a>
-          </li>
-        </ul>
-        <ul class="nav masthead-nav footer-nav pull-right">
-          <li><a href="https://www.facebook.com/memegenlink" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com/memegenlink" target="_blank">Twitter</a></li>
-          <li><a href="{{ config['GITHUB_URL'] }}" target="_blank">GitHub</a></li>
-          <li><a href="/api/" target="_blank">API</a></li>
-        </ul>
-      </nav>
-    </div>
-
   </body>
 </html>
