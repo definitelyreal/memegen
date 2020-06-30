@@ -76,7 +76,7 @@ def track(title):
         cid=request.remote_addr,
 
         t='pageview',
-        dh='memegen.link',
+        dh='ZANDERMEME',
         dp=request.full_path,
         dt=str(title),
 
@@ -87,7 +87,7 @@ def track(title):
     remote_url = current_app.config['REMOTE_TRACKING_URL']
     remote_data = dict(
         text=str(title),
-        source='memegen.link',
+        source='ZANDERMEME',
         context=unquote(request.url),
     )
 

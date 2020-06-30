@@ -2,7 +2,7 @@
 
 import sys
 
-__project__ = 'memegen.link'
+__project__ = 'ZANDERMEME'
 __version__ = '5.6'
 
 VERSION = "{} v{}".format(__project__, __version__)

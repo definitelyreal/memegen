@@ -21,7 +21,7 @@ def client(app):  # pylint: disable=redefined-outer-name
 @pytest.yield_fixture
 def public_client(app):  # pylint: disable=redefined-outer-name
     backup = app.config['WATERMARK_OPTIONS']
-    app.config['WATERMARK_OPTIONS'] = ['memegen.link']
+    app.config['WATERMARK_OPTIONS'] = ['ZANDERMEME']
 
     yield app.test_client()
 

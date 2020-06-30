@@ -13,7 +13,7 @@ def run():
         options = []
         for template in app.template_service.all():
             for text in [Text("_"), template.sample_text]:
-                for watermark in ["", "memegen.link"]:
+                for watermark in ["", "ZANDERMEME"]:
                     options.append((template, text, watermark))
 
         print(f"Generating {len(options)} sample images...")
