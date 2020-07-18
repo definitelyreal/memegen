@@ -43,7 +43,7 @@ pycodestyle = "*"
 pydocstyle = "*"
 
 # Testing
-pytest = "<4"
+pytest = "*"
 pytest-describe = "*"
 pytest-expecter = "*"
 pytest-random = "*"
